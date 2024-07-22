@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Statements xmlns="CarSystemTest/businesslogicsqltemplate">
+  <Statement IsProc="0">
+    <Title>InsertSys_Operate_Log</Title>
+    <Comment>記錄操作日誌</Comment>
+    <Sql>
+      insert Sys_Operate_Log(OperateType,OperateUserID,OperateDesc,SQLContent,CreateTime,HostIP,HostName)
+      values(@OperateType,@OperateUserID,@OperateDesc,@SQLContent,getdate(),@HostIP,@HostName)
+    </Sql>
+    <Params>
+      <Param Name="OperateType" Pos="param1" DbType="char" Direction="Input" Size="1"/>
+      <Param Name="OperateUserID" Pos="param2" DbType="int" Direction="Input" Size="5"/>
+      <Param Name="OperateDesc" Pos="param3" DbType="nvarchar" Direction="Input" Size="255"/>
+      <Param Name="SQLContent" Pos="param4" DbType="varchar" Direction="Input" Size="255"/>
+      <Param Name="HostIP" Pos="param5" DbType="varchar" Direction="Input" Size="50"/>
+      <Param Name="HostName" Pos="param6" DbType="nvarchar" Direction="Input" Size="50"/>     
+    </Params>
+  </Statement>
+</Statements>

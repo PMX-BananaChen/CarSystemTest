@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>E:\发布\CarSystem</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/CarSystem.Business.dll">
+      <publishTime>12/22/2023 09:29:34</publishTime>
+    </File>
+    <File Include="bin/CarSystem.Common.dll">
+      <publishTime>12/22/2023 09:29:34</publishTime>
+    </File>
+    <File Include="bin/CarSystem.DAL.dll">
+      <publishTime>12/22/2023 09:29:34</publishTime>
+    </File>
+    <File Include="bin/CarSystem.DBUtility.dll">
+      <publishTime>12/22/2023 09:29:34</publishTime>
+    </File>
+    <File Include="bin/CarSystem.dll">
+      <publishTime>12/22/2023 09:29:38</publishTime>
+    </File>
+    <File Include="bin/CarSystem.Model.dll">
+      <publishTime>12/22/2023 09:29:33</publishTime>
+    </File>
+    <File Include="bin/CarSystemTest.Business.dll">
+      <publishTime>03/11/2024 11:57:49</publishTime>
+    </File>
+    <File Include="bin/CarSystemTest.Common.dll">
+      <publishTime>03/11/2024 11:57:49</publishTime>
+    </File>
+    <File Include="bin/CarSystemTest.DAL.dll">
+      <publishTime>03/11/2024 11:57:49</publishTime>
+    </File>
+    <File Include="bin/CarSystemTest.DBUtility.dll">
+      <publishTime>03/11/2024 11:57:49</publishTime>
+    </File>
+    <File Include="bin/CarSystemTest.dll">
+      <publishTime>03/11/2024 11:57:52</publishTime>
+    </File>
+    <File Include="bin/CarSystemTest.Model.dll">
+      <publishTime>03/11/2024 11:57:49</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:26:06</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:25:54</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:27:18</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:26:02</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:25:22</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:27:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ObjectBuilder.dll">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>04/28/2021 15:16:49</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>02/21/2014 06:28:46</publishTime>
+    </File>
+    <File Include="bin/NPOI.dll">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="bin/NPOI.OOXML.dll">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXml4Net.dll">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXmlFormats.dll">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:25:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/26/2021 17:45:08</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:25:46</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.DataAnnotations.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Data.DataSetExtensions.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Drawing.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:27:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:28:10</publishTime>
+    </File>
+    <File Include="Car/AppCancel.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/AppDestinations.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/AppDetail.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/AppHistory.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/Application.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/AuditLine.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/BindingCar.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/BindingVendor.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/CalFee.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/Quotation.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/Redirect.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/ToDoList.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Car/UploadTollFee.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Error.html">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="GPS/CarTracking.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="GPS/CurrentPosition.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Images/001.jpg">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/404.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/add.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/arrow_03.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/arrow_04.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/arrow_05.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/arrow_06.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/banner.jpg">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/btnbg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/btnbg1.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/btnbg2.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/buttonbg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/c01.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/c02.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/c03.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/cbg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/clist.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/close.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/close1.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/cloud.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/d01.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/d02.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/d03.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/d04.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/d05.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/d06.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/d07.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/default-logo.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/diskbg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/dp.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/f01.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/f02.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/f03.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/f04.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/f05.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/f06.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/help.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/i01.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/i02.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/i03.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/i04.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/i05.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/i06.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/i07.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/i08.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/i09.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/iadd.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/ibtnbg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/ico01.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/ico02.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/ico03.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/ico04.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/ico05.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/ico06.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/icon01.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/icon02.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/icon03.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/icon04.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/icon05.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/icon06.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img01.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img02.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img03.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img04.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img05.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img06.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img07.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img08.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img09.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img10.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img11.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img12.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img13.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img14.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/img15.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/inputbg.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/itabbg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/itabbg1.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/leftico.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/leftico01.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/leftico02.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/leftico03.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/leftico04.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/leftico05.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/leftico06.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/leftline.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/leftmenubg.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/lefttop.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/libg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/light.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/line.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/line1.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/list.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/list1.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/list2.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/loginbg1.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/loginbg2.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/loginbg3.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/logininfo.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/loginlogo.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/loginpassword.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/loginsj.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/loginuser.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/map.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/msg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/navbg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/next.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/pre.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/px.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/righttop.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/rlist.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/search.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/sj.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/sun.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/t01.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/t02.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/t03.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/t04.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/t05.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/tbg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/tcbg.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/th.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/ticon.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/time.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/toolbg.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/topbg.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/topleft.jpg">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/topright.jpg">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/ub1.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/uew_icon.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/uew_icon_hover.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/ulist.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/user.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Images/userbg.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="MainPage/Main.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="MasterPage.Master">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="NoPrivilege.html">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/11/2024 11:56:31</publishTime>
+    </File>
+    <File Include="PersonalSetting/Gps/CarTracking.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="PersonalSetting/Gps/CurrentPosition.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="PersonalSetting/PersonalPwd.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Report/StatisticExpenseRpt.aspx">
+      <publishTime>12/25/2023 14:25:43</publishTime>
+    </File>
+    <File Include="Scripts/common.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/DateUtil.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/fixTable.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.1.min.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/calendar.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/config.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/lang/en.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/lang/zh-cn.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/lang/zh-tw.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/My97DatePicker.htm">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/datePicker.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/default/datepicker.css">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/default/img.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/twoer/datepicker-dev.css">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/twoer/datepicker.css">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/twoer/img.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/twoer/img.png">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/WdatePicker.css">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/whyGreen/bg.jpg">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/whyGreen/datepicker.css">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/skin/whyGreen/img.gif">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/My97DatePicker/WdatePicker.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/Popcalendar.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Scripts/select-ui.min.js">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="SQL/CarBiz.xml">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="SQL/Common.xml">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="SQL/OperateLog.xml">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="SQL/UserModule.xml">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="SQL/Vendor.xml">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Styles/Login.css">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Styles/select.css">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="Styles/style.css">
+      <publishTime>08/26/2021 17:45:07</publishTime>
+    </File>
+    <File Include="SystemSetting/Privilege.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="SystemSetting/PrivilegeAdd.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="SystemSetting/Role.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="SystemSetting/RoleAdd.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="SystemSetting/User.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="SystemSetting/UserAdd.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="SystemSetting/UserRoleBind.aspx">
+      <publishTime>12/22/2023 09:24:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/11/2024 11:57:53</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+E:\Projects\CarSystem\Model\bin\Release\CarSystem.Model.dll
+E:\Projects\CarSystem\Model\bin\Release\CarSystem.Model.pdb
+E:\Projects\CarSystem\Model\obj\Release\CarSystem.Model.dll
+E:\Projects\CarSystem\Model\obj\Release\CarSystem.Model.pdb
+E:\Projects\CarSystem\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\CarSystem\Model\bin\Release\CarSystem.Model.dll
+D:\CarSystem\Model\bin\Release\CarSystem.Model.pdb
+D:\CarSystem\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\CarSystem\Model\obj\Release\CarSystem.Model.dll
+D:\CarSystem\Model\obj\Release\CarSystem.Model.pdb
+D:\CarSystemTest\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\CarSystemTest\Model\bin\Release\CarSystemTest.Model.dll
+D:\CarSystemTest\Model\bin\Release\CarSystemTest.Model.pdb
+D:\CarSystemTest\Model\obj\Release\CarSystemTest.Model.dll
+D:\CarSystemTest\Model\obj\Release\CarSystemTest.Model.pdb
+D:\CarSystemTest\Model\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\CarSystemTest\Model\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll

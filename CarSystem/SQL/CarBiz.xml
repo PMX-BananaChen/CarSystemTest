@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Statements xmlns="CarSystemTest/businesslogicsqltemplate">
+  <Statement IsProc="0">
+    <Title>GetAppSchema</Title>
+    <Comment>獲取申請單相關表的架構信息</Comment>
+    <Sql>
+      select top 0 * from Vehicle_Master
+      select top 0 DestinationRegionCode,DetailAddress,Remark from Vehicle_Destination
+      select top 0 PassengerName,EmpNO,Mobile,Remark from Vehicle_Passenger
+    </Sql>
+    <Params>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>GetAllFlowStatus</Title>
+    <Comment>獲取申請單相關表的架構信息</Comment>
+    <Sql>
+      select * from Sys_Flow_Status
+    </Sql>
+    <Params>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>GetAllDispatcher</Title>
+    <Comment>獲取所有的派車人</Comment>
+    <Sql>
+      select ISNULL(a.Dispatcher,'') as dispatcher,ISNULL(UserChineseName,'') as UserChineseName
+      from (
+      select distinct Dispatcher from Sys_Approve
+      ) as a
+      left join sys_users as b on a.Dispatcher=b.UserAccount
+      order by dispatcher
+    </Sql>
+    <Params>
+    </Params>
+  </Statement>
+</Statements>

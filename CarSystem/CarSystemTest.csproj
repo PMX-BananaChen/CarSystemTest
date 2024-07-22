@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{231E2371-F60B-4206-9CE3-4BE95FEFB885}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarSystemTest</RootNamespace>
+    <AssemblyName>CarSystemTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>C:\Users\guangxu.ren\Desktop\NPIO\dotnet4\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Cquential.Microsoft.Practices.EnterpriseLibrary.Common.3.1.0\lib\net35\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cquential.Microsoft.Practices.EnterpriseLibrary.Data.3.1.0\lib\net35\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.v12.12.0.0.0\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>C:\Users\guangxu.ren\Desktop\NPIO\dotnet4\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>C:\Users\guangxu.ren\Desktop\NPIO\dotnet4\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>C:\Users\guangxu.ren\Desktop\NPIO\dotnet4\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>C:\Users\guangxu.ren\Desktop\NPIO\dotnet4\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Car\AppCancel.aspx" />
+    <Content Include="Car\AppDestinations.aspx" />
+    <Content Include="Car\AppDetail.aspx" />
+    <Content Include="Car\AppHistory.aspx" />
+    <Content Include="Car\Application.aspx" />
+    <Content Include="Car\AuditLine.aspx" />
+    <Content Include="Car\BindingCar.aspx" />
+    <Content Include="Car\BindingVendor.aspx" />
+    <Content Include="Car\CalFee.aspx" />
+    <Content Include="Car\Quotation.aspx" />
+    <Content Include="Car\Redirect.aspx" />
+    <Content Include="Car\ToDoList.aspx" />
+    <Content Include="Car\UploadTollFee.aspx" />
+    <Content Include="Error.html" />
+    <Content Include="GPS\CarTracking.aspx" />
+    <Content Include="GPS\CurrentPosition.aspx" />
+    <Content Include="Images\leftico06.png" />
+    <Content Include="PersonalSetting\Gps\CarTracking.aspx" />
+    <Content Include="PersonalSetting\Gps\CurrentPosition.aspx" />
+    <Content Include="Images\001.jpg" />
+    <Content Include="Images\404.png" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\arrow_03.gif" />
+    <Content Include="Images\arrow_04.gif" />
+    <Content Include="Images\arrow_05.gif" />
+    <Content Include="Images\arrow_06.gif" />
+    <Content Include="Images\btnbg.png" />
+    <Content Include="Images\btnbg1.png" />
+    <Content Include="Images\btnbg2.png" />
+    <Content Include="Images\buttonbg.png" />
+    <Content Include="Images\c01.png" />
+    <Content Include="Images\c02.png" />
+    <Content Include="Images\c03.png" />
+    <Content Include="Images\cbg.png" />
+    <Content Include="Images\clist.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\close1.png" />
+    <Content Include="Images\cloud.png" />
+    <Content Include="Images\d01.png" />
+    <Content Include="Images\d02.png" />
+    <Content Include="Images\d03.png" />
+    <Content Include="Images\d04.png" />
+    <Content Include="Images\d05.png" />
+    <Content Include="Images\d06.png" />
+    <Content Include="Images\d07.png" />
+    <Content Include="Images\default-logo.gif" />
+    <Content Include="Images\diskbg.png" />
+    <Content Include="Images\dp.png" />
+    <Content Include="Images\f01.png" />
+    <Content Include="Images\f02.png" />
+    <Content Include="Images\f03.png" />
+    <Content Include="Images\f04.png" />
+    <Content Include="Images\f05.png" />
+    <Content Include="Images\f06.png" />
+    <Content Include="Images\help.png" />
+    <Content Include="Images\i01.png" />
+    <Content Include="Images\i02.png" />
+    <Content Include="Images\i03.png" />
+    <Content Include="Images\i04.png" />
+    <Content Include="Images\i05.png" />
+    <Content Include="Images\i06.png" />
+    <Content Include="Images\i07.png" />
+    <Content Include="Images\i08.png" />
+    <Content Include="Images\i09.png" />
+    <Content Include="Images\iadd.png" />
+    <Content Include="Images\ibtnbg.png" />
+    <Content Include="Images\ico01.png" />
+    <Content Include="Images\ico02.png" />
+    <Content Include="Images\ico03.png" />
+    <Content Include="Images\ico04.png" />
+    <Content Include="Images\ico05.png" />
+    <Content Include="Images\ico06.png" />
+    <Content Include="Images\icon01.png" />
+    <Content Include="Images\icon02.png" />
+    <Content Include="Images\icon03.png" />
+    <Content Include="Images\icon04.png" />
+    <Content Include="Images\icon05.png" />
+    <Content Include="Images\icon06.png" />
+    <Content Include="Images\img01.png" />
+    <Content Include="Images\img02.png" />
+    <Content Include="Images\img03.png" />
+    <Content Include="Images\img04.png" />
+    <Content Include="Images\img05.png" />
+    <Content Include="Images\img06.png" />
+    <Content Include="Images\img07.png" />
+    <Content Include="Images\img08.png" />
+    <Content Include="Images\img09.png" />
+    <Content Include="Images\img10.png" />
+    <Content Include="Images\img11.png" />
+    <Content Include="Images\img12.png" />
+    <Content Include="Images\img13.png" />
+    <Content Include="Images\img14.png" />
+    <Content Include="Images\img15.png" />
+    <Content Include="Images\inputbg.gif" />
+    <Content Include="Images\itabbg.png" />
+    <Content Include="Images\itabbg1.png" />
+    <Content Include="Images\leftico.png" />
+    <Content Include="Images\leftico01.png" />
+    <Content Include="Images\leftico02.png" />
+    <Content Include="Images\leftico03.png" />
+    <Content Include="Images\leftico04.png" />
+    <Content Include="Images\leftico05.png" />
+    <Content Include="Images\leftline.gif" />
+    <Content Include="Images\leftmenubg.gif" />
+    <Content Include="Images\lefttop.gif" />
+    <Content Include="Images\libg.png" />
+    <Content Include="Images\light.png" />
+    <Content Include="Images\line.gif" />
+    <Content Include="Images\line1.png" />
+    <Content Include="Images\list.gif" />
+    <Content Include="Images\list1.gif" />
+    <Content Include="Images\list2.png" />
+    <Content Include="Images\loginbg1.png" />
+    <Content Include="Images\loginbg2.png" />
+    <Content Include="Images\loginbg3.png" />
+    <Content Include="Images\logininfo.png" />
+    <Content Include="Images\loginlogo.png" />
+    <Content Include="Images\loginpassword.png" />
+    <Content Include="Images\loginsj.png" />
+    <Content Include="Images\loginuser.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\map.gif" />
+    <Content Include="Images\msg.png" />
+    <Content Include="Images\navbg.png" />
+    <Content Include="Images\next.gif" />
+    <Content Include="Images\pre.gif" />
+    <Content Include="Images\px.gif" />
+    <Content Include="Images\righttop.gif" />
+    <Content Include="Images\rlist.gif" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\sj.png" />
+    <Content Include="Images\sun.png" />
+    <Content Include="Images\t01.png" />
+    <Content Include="Images\t02.png" />
+    <Content Include="Images\t03.png" />
+    <Content Include="Images\t04.png" />
+    <Content Include="Images\t05.png" />
+    <Content Include="Images\tbg.png" />
+    <Content Include="Images\tcbg.gif" />
+    <Content Include="Images\th.gif" />
+    <Content Include="Images\ticon.png" />
+    <Content Include="Images\time.png" />
+    <Content Include="Images\toolbg.gif" />
+    <Content Include="Images\topbg.gif" />
+    <Content Include="Images\topleft.jpg" />
+    <Content Include="Images\topright.jpg" />
+    <Content Include="Images\ub1.png" />
+    <Content Include="Images\uew_icon.png" />
+    <Content Include="Images\uew_icon_hover.png" />
+    <Content Include="Images\ulist.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\userbg.png" />
+    <Content Include="MainPage\Main.aspx" />
+    <Content Include="NoPrivilege.html" />
+    <Content Include="packages.config" />
+    <Content Include="MasterPage.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="PersonalSetting\PersonalPwd.aspx" />
+    <Content Include="Report\StatisticExpenseRpt.aspx" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\DateUtil.js" />
+    <Content Include="Scripts\fixTable.js" />
+    <Content Include="Scripts\jquery-1.8.1.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\My97DatePicker\calendar.js" />
+    <Content Include="Scripts\My97DatePicker\config.js" />
+    <Content Include="Scripts\My97DatePicker\lang\en.js" />
+    <Content Include="Scripts\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Scripts\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Scripts\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="Scripts\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\twoer\datepicker-dev.css" />
+    <Content Include="Scripts\My97DatePicker\skin\twoer\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\twoer\img.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\twoer\img.png" />
+    <Content Include="Scripts\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Scripts\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Scripts\My97DatePicker\WdatePicker.js" />
+    <Content Include="Scripts\Popcalendar.js" />
+    <Content Include="Scripts\select-ui.min.js" />
+    <Content Include="SQL\CarBiz.xml" />
+    <Content Include="SQL\Common.xml" />
+    <Content Include="SQL\OperateLog.xml" />
+    <Content Include="SQL\UserModule.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SQL\Vendor.xml" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\select.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="SystemSetting\Privilege.aspx" />
+    <Content Include="SystemSetting\PrivilegeAdd.aspx" />
+    <Content Include="SystemSetting\Role.aspx" />
+    <Content Include="SystemSetting\RoleAdd.aspx" />
+    <Content Include="SystemSetting\User.aspx" />
+    <Content Include="SystemSetting\UserAdd.aspx" />
+    <Content Include="SystemSetting\UserRoleBind.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Car\AppCancel.aspx.cs">
+      <DependentUpon>AppCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\AppCancel.aspx.designer.cs">
+      <DependentUpon>AppCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\AppDestinations.aspx.cs">
+      <DependentUpon>AppDestinations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\AppDestinations.aspx.designer.cs">
+      <DependentUpon>AppDestinations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\AppDetail.aspx.cs">
+      <DependentUpon>AppDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\AppDetail.aspx.designer.cs">
+      <DependentUpon>AppDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\AppHistory.aspx.cs">
+      <DependentUpon>AppHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\AppHistory.aspx.designer.cs">
+      <DependentUpon>AppHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Application.aspx.cs">
+      <DependentUpon>Application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\Application.aspx.designer.cs">
+      <DependentUpon>Application.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\AuditLine.aspx.cs">
+      <DependentUpon>AuditLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\AuditLine.aspx.designer.cs">
+      <DependentUpon>AuditLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\BindingCar.aspx.cs">
+      <DependentUpon>BindingCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\BindingCar.aspx.designer.cs">
+      <DependentUpon>BindingCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\BindingVendor.aspx.cs">
+      <DependentUpon>BindingVendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\BindingVendor.aspx.designer.cs">
+      <DependentUpon>BindingVendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\CalFee.aspx.cs">
+      <DependentUpon>CalFee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\CalFee.aspx.designer.cs">
+      <DependentUpon>CalFee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Quotation.aspx.cs">
+      <DependentUpon>Quotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\Quotation.aspx.designer.cs">
+      <DependentUpon>Quotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\Redirect.aspx.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\Redirect.aspx.designer.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\ToDoList.aspx.cs">
+      <DependentUpon>ToDoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\ToDoList.aspx.designer.cs">
+      <DependentUpon>ToDoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\UploadTollFee.aspx.cs">
+      <DependentUpon>UploadTollFee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\UploadTollFee.aspx.designer.cs">
+      <DependentUpon>UploadTollFee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GPS\CarTracking.aspx.cs">
+      <DependentUpon>CarTracking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GPS\CarTracking.aspx.designer.cs">
+      <DependentUpon>CarTracking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GPS\CurrentPosition.aspx.cs">
+      <DependentUpon>CurrentPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GPS\CurrentPosition.aspx.designer.cs">
+      <DependentUpon>CurrentPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalSetting\Gps\CarTracking.aspx.cs">
+      <DependentUpon>CarTracking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonalSetting\Gps\CarTracking.aspx.designer.cs">
+      <DependentUpon>CarTracking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalSetting\Gps\CurrentPosition.aspx.cs">
+      <DependentUpon>CurrentPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonalSetting\Gps\CurrentPosition.aspx.designer.cs">
+      <DependentUpon>CurrentPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalSetting\PersonalPwd.aspx.cs">
+      <DependentUpon>PersonalPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonalSetting\PersonalPwd.aspx.designer.cs">
+      <DependentUpon>PersonalPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\StatisticExpenseRpt.aspx.cs">
+      <DependentUpon>StatisticExpenseRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\StatisticExpenseRpt.aspx.designer.cs">
+      <DependentUpon>StatisticExpenseRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\Privilege.aspx.cs">
+      <DependentUpon>Privilege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\Privilege.aspx.designer.cs">
+      <DependentUpon>Privilege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\PrivilegeAdd.aspx.cs">
+      <DependentUpon>PrivilegeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\PrivilegeAdd.aspx.designer.cs">
+      <DependentUpon>PrivilegeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\Role.aspx.cs">
+      <DependentUpon>Role.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\Role.aspx.designer.cs">
+      <DependentUpon>Role.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\RoleAdd.aspx.cs">
+      <DependentUpon>RoleAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\RoleAdd.aspx.designer.cs">
+      <DependentUpon>RoleAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\UserAdd.aspx.cs">
+      <DependentUpon>UserAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\UserAdd.aspx.designer.cs">
+      <DependentUpon>UserAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\UserRoleBind.aspx.cs">
+      <DependentUpon>UserRoleBind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\UserRoleBind.aspx.designer.cs">
+      <DependentUpon>UserRoleBind.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{7a2e59d8-890d-4651-826f-1e2652296ee7}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{83fde0cc-83e1-43f2-8ebc-ce1d89761cda}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{b705c0dc-18df-4930-8339-4046079376d4}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{69815858-f507-4963-82d4-4059eb8f9041}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{15a6ec83-5590-44f7-9959-8b6c90b2acde}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BaseInfoSetting\" />
+    <Folder Include="Files\" />
+    <Folder Include="Log\" />
+    <Folder Include="UserSetting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19104</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:19104/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

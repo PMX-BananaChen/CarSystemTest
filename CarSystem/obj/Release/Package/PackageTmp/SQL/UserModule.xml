@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Statements xmlns="CarSystemTest/businesslogicsqltemplate">
+  <Statement IsProc="0">
+    <Title>GetUserInfoById</Title>
+    <Comment>獲取用戶基本信息</Comment>
+    <Sql>
+      select * from Sys_Users where UserID=@UserID
+    </Sql>
+    <Params>
+      <Param Name="UserID" Pos="param1" DbType="int" Direction="Input" Size="5"/>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>InsertSys_Privilege</Title>
+    <Comment>新增權限</Comment>
+    <Sql>
+      insert Sys_Privilege(PrivilegeCode,PrivilegeName,ChineseDisplayName,EnglishDisplayName,
+      PrivilegeTypeCode,ParentPrivilegeCode,Priority,ResourceURL,IsMenu,IsSuperAdminDisplay)
+      values(@PrivilegeCode,@PrivilegeName,@ChineseDisplayName,@EnglishDisplayName,
+      @PrivilegeTypeCode,@ParentPrivilegeCode,@Priority,@ResourceURL,@IsMenu,@IsSuperAdminDisplay)
+    </Sql>
+    <Params>
+      <Param Name="PrivilegeCode" Pos="param1" DbType="smallint" Direction="Input" Size="5"/>
+      <Param Name="PrivilegeName" Pos="param2" DbType="nvarchar" Direction="Input" Size="50"/>
+      <Param Name="ChineseDisplayName" Pos="param3" DbType="nvarchar" Direction="Input" Size="50"/>
+      <Param Name="EnglishDisplayName" Pos="param4" DbType="varchar" Direction="Input" Size="50"/>
+      <Param Name="PrivilegeTypeCode" Pos="param5" DbType="tinyint" Direction="Input" Size="5"/>
+      <Param Name="ParentPrivilegeCode" Pos="param6" DbType="smallint" Direction="Input" Size="5"/>
+      <Param Name="Priority" Pos="param7" DbType="tinyint" Direction="Input" Size="5"/>
+      <Param Name="ResourceURL" Pos="param8" DbType="varchar" Direction="Input" Size="200"/>
+      <Param Name="IsMenu" Pos="param9" DbType="char" Direction="Input" Size="1"/>
+      <Param Name="IsSuperAdminDisplay" Pos="param10" DbType="char" Direction="Input" Size="1"/>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>UpdateSys_Privilege</Title>
+    <Comment>更新權限</Comment>
+    <Sql>
+      update Sys_Privilege set PrivilegeName=@PrivilegeName,ChineseDisplayName=@ChineseDisplayName,EnglishDisplayName=@EnglishDisplayName,
+      ParentPrivilegeCode=@ParentPrivilegeCode,Priority=@Priority,ResourceURL=@ResourceURL,IsMenu=@IsMenu,IsSuperAdminDisplay=@IsSuperAdminDisplay
+      where PrivilegeCode=@PrivilegeCode
+    </Sql>
+    <Params>
+      <Param Name="PrivilegeCode" Pos="param1" DbType="smallint" Direction="Input" Size="5"/>
+      <Param Name="PrivilegeName" Pos="param2" DbType="nvarchar" Direction="Input" Size="50"/>
+      <Param Name="ChineseDisplayName" Pos="param3" DbType="nvarchar" Direction="Input" Size="50"/>
+      <Param Name="EnglishDisplayName" Pos="param4" DbType="varchar" Direction="Input" Size="50"/>
+      <Param Name="PrivilegeTypeCode" Pos="param5" DbType="tinyint" Direction="Input" Size="5"/>
+      <Param Name="ParentPrivilegeCode" Pos="param6" DbType="smallint" Direction="Input" Size="5"/>
+      <Param Name="Priority" Pos="param7" DbType="tinyint" Direction="Input" Size="5"/>
+      <Param Name="ResourceURL" Pos="param8" DbType="varchar" Direction="Input" Size="200"/>
+      <Param Name="IsMenu" Pos="param9" DbType="char" Direction="Input" Size="1"/>
+      <Param Name="IsSuperAdminDisplay" Pos="param10" DbType="char" Direction="Input" Size="1"/>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>GetParentPrivileges</Title>
+    <Comment>獲取所有的父級權限</Comment>
+    <Sql>
+      select * from Sys_Privilege where ParentPrivilegeCode=0
+    </Sql>
+    <Params>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>GetPrivilegeById</Title>
+    <Comment>根據ID獲取對應權限信息</Comment>
+    <Sql>
+      select * from Sys_Privilege where PrivilegeCode=@PrivilegeCode
+    </Sql>
+    <Params>
+      <Param Name="PrivilegeCode" Pos="param1" DbType="smallint" Direction="Input" Size="5"/>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>GetRoleInfoById</Title>
+    <Comment>根據ID獲取角色相關的信息</Comment>
+    <Sql>
+      select * from Sys_Roles where RoleCode=@RoleCode
+      select * from Sys_Privilege where PrivilegeCode in (select PrivilegeCode from Sys_Role_Privilege where RoleCode=@RoleCode)
+      select * from Sys_Privilege where PrivilegeCode not in (select PrivilegeCode from Sys_Role_Privilege where RoleCode=@RoleCode)
+    </Sql>
+    <Params>
+      <Param Name="RoleCode" Pos="param1" DbType="smallint" Direction="Input" Size="5"/>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>UpdatePwd</Title>
+    <Comment>更改用戶密碼</Comment>
+    <Sql>
+      update Sys_Users set Password=@Password where UserID=@UserID
+    </Sql>
+    <Params>
+      <Param Name="UserID" Pos="param1" DbType="int" Direction="Input" Size="5"/>
+      <Param Name="Password" Pos="param2" DbType="varchar" Direction="Input" Size="50"/>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>GetUserTypeGradeEmp</Title>
+    <Comment>獲取用戶類型，用戶級別，用戶所屬部門或廠商</Comment>
+    <Sql>
+      select * from Sys_User_Type
+      select * from Sys_User_Grade
+      select * from Sys_Department
+    </Sql>
+    <Params>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>GetAllDepts</Title>
+    <Comment>獲取所有的用戶部門信息</Comment>
+    <Sql>
+      select * from Sys_Department
+    </Sql>
+    <Params>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>GetUserInfoByUserId</Title>
+    <Comment>根據用戶id獲取對應的用戶信息</Comment>
+    <Sql>
+      select a.*,
+      ISNULL(b.DepartmentCode,'') as DepartmentCode,
+      isnull(c.EmpNO,'') as EmpNo,
+      ISNULL(d.VendorCode,'') as VendorCode
+      from Sys_Users as a
+      left join Sys_User_Dep as b on a.UserAccount=b.UserAccount
+      left join Sys_User_Emp as c on a.UserAccount=c.UserAccount
+      left join Sys_User_Vendor as d on a.UserAccount=d.UserAccount
+      where UserID=@UserID
+    </Sql>
+    <Params>
+      <Param Name="UserID" Pos="param1" DbType="int" Direction="Input" Size="5"/>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>GetRoleInfoByUserId</Title>
+    <Comment>獲取用戶對應的角色或權限</Comment>
+    <Sql>
+      select * from Sys_Users where UserID=@UserID
+      select * from Sys_Roles where RoleCode not in (select RolePrivilegeCode from Sys_User_Role_Privilege where UserID=@UserID and Flag='1')
+      select * from Sys_Roles where RoleCode in (select RolePrivilegeCode from Sys_User_Role_Privilege where UserID=@UserID and Flag='1')
+      select * from Sys_Privilege where PrivilegeCode not in (select RolePrivilegeCode from Sys_User_Role_Privilege where UserID=@UserID and Flag='2')
+      select * from Sys_Privilege where PrivilegeCode in (select RolePrivilegeCode from Sys_User_Role_Privilege where UserID=@UserID and Flag='2')
+    </Sql>
+    <Params>
+      <Param Name="UserID" Pos="param1" DbType="int" Direction="Input" Size="5"/>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>GetRolesByUserId</Title>
+    <Comment>獲取用戶對應的角色或權限</Comment>
+    <Sql>
+       select RolePrivilegeCode from Sys_User_Role_Privilege where UserID=@UserID and Flag='1'
+    </Sql>
+    <Params>
+      <Param Name="UserID" Pos="param1" DbType="int" Direction="Input" Size="5"/>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>DeleteRole</Title>
+    <Comment>刪除角色</Comment>
+    <Sql>
+      delete from Sys_Roles where RoleCode=@RoleCode
+      delete from Sys_Role_Privilege where RoleCode=@RoleCode
+    </Sql>
+    <Params>
+      <Param Name="RoleCode" Pos="param1" DbType="int" Direction="Input" Size="5"/>
+    </Params>
+  </Statement>
+  <Statement IsProc="0">
+    <Title>DeleteUser</Title>
+    <Comment>禁用用戶</Comment>
+    <Sql>
+      update Sys_Users set IsEnabled='0',UpdateTime=getdate() where UserID=@UserID
+    </Sql>
+    <Params>
+      <Param Name="UserID" Pos="param1" DbType="int" Direction="Input" Size="5"/>
+    </Params>
+  </Statement>
+</Statements>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Statements xmlns="CarSystemTest/businesslogicsqltemplate">
+  <Statement IsProc="0">
+    <Title>GetTableSchema</Title>
+    <Comment>獲取指定表的架構信息</Comment>
+    <Sql>
+      SELECT COLUMN_NAME,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH,NUMERIC_PRECISION
+      FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME=@TABLE_NAME
+    </Sql>
+    <Params>
+      <Param Name="TABLE_NAME" Pos="param1" DbType="varchar" Direction="Input" Size="100"/>
+    </Params>
+  </Statement>
+</Statements>

@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="CarSystemTest.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%--<!DOCTYPE html>--%>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="Styles/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menuson li").click(function () {
+                //$(".menuson li.active").removeClass("active")
+                //$(this).addClass("active");
+                $(".menuson li.active").toggleClass("active");
+                $(this).toggleClass("active");
+            });
+
+            $(".title").click(function () {
+                var $ul = $(this).next("ul");
+                $("dd").find("ul").slideUp();
+                if ($ul.is(":visible")) {
+                    $(this).next("ul").slideUp();
+                } else {
+                    $(this).next("ul").slideDown();
+                }
+            });
+        });
+
+    </script>
+    <%--<script>
+        //$(document).ready(function () {
+        //    alert("123");
+
+        //    $(".menuson li").click(function () {
+        //        $(".menuson li.active").removeClass("active")
+        //        $(this).addClass("active");
+        //    });
+
+        //    $(".title").click(function () {
+        //        alert("123");
+        //        var $ul = $(this).next("ul");
+        //        $("dd").find("ul").slideUp();
+        //        if ($ul.is(":visible")) {
+        //            $(this).next("ul").slideUp();
+        //        } else {
+        //            $(this).next("ul").slideDown();
+        //        }
+        //    });
+        //});
+        //$(function () {
+        //    //导航切换
+        //    $(".menuson li").click(function () {
+        //        $(".menuson li.active").removeClass("active")
+        //        $(this).addClass("active");
+        //    });
+
+        //    $(".title").click(function () {
+        //        alert("123");
+        //        var $ul = $(this).next("ul");
+        //        $("dd").find("ul").slideUp();
+        //        if ($ul.is(":visible")) {
+        //            $(this).next("ul").slideUp();
+        //        } else {
+        //            $(this).next("ul").slideDown();
+        //        }
+        //    });
+        //})
+    </script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="True" AsyncPostBackTimeout="240">
+        </asp:ScriptManager>
+
+        <div class="topleft">
+            <a href="main.html" target="_parent">
+                <img src="../Images/default-logo.gif" title="系统首页" /></a>
+        </div>
+        <div class="topright">
+            <ul>
+                <li><span>
+                    <img src="../images/help.png" title="帮助" class="helpimg" /></span><a href="#">帮助</a></li>
+                <li><a href="../MainPage/Main.aspx">主頁</a></li>
+                <li><a href="../Login.aspx" target="_parent">退出</a></li>
+            </ul>
+
+            <div class="user">
+                <%--<span>--%>
+
+                <asp:Label ID="lblUser" runat="server">
+                </asp:Label>
+
+
+
+
+                <%--</span>--%>
+                <%-- <i>待處理</i>
+                <b>--%>
+                <%--<asp:Label ID="lblTodo" runat="server">
+                            5
+
+                        </asp:Label>--%>
+                <%--5</b>--%>
+            </div>
+        </div>
+        <div id="divHeader" style="background: url(../Images/topbg.gif) repeat-x; height: 88px;">
+        </div>
+        <div id="divMiddle" style="width: 100%">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="vertical-align: top;">
+                        <!-- start 左邊菜單 -->
+                        <%--<div id="divLeft" style="width: 180px; text-align:left; line-height: 16px;">--%>
+                        <div id="divMenu" runat="server" style="background: #f0f9fd;">
+                        </div>
+                        <%--</div>--%>
+                        <!-- end 左邊菜單-->
+                    </td>
+                    <td style="vertical-align: top; width: 100%; height: 100%;">
+                        <%--  <div id="divMain" style="width: 100%; text-align: left; padding: 0px;">--%>
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <%--  </div>--%>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+</body>
+</html>
+
